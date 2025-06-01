@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hoja de Vida - Ronaldo Jesús Ávila Rodríguez</title>
+
+  <style>
+    :root {
+      --primary-color: #0052cc;
+      --secondary-color: #0073e6;
+      --accent-color: #00c2ff;
+      --bg-light: #f4faff;
+      --text-dark: #1f1f1f;
+      --text-light: #ffffff;
+      --card-bg: #ffffff;
+      --card-shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      transition: all 0.3s ease;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: var(--text-light);
+      padding: 3rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 12px var(--card-shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      width: 200%;
+      height: 200%;
+      top: -50%;
+      left: -50%;
+      background: radial-gradient(circle, rgba(255,255,255,0.05) 20%, transparent 60%);
+      animation: pulse 6s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 6px solid white;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: var(--primary-color);
+      margin: 1.5rem 0 1rem;
+      border-bottom: 3px solid var(--accent-color);
+      padding-bottom: 0.5rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    a {
+      color: var(--secondary-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .mode-switch {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      padding: 0.6rem 1rem;
+      background: var(--accent-color);
+      color: #000;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      z-index: 999;
+    }
+
+    /* PDF sección desplegable */
+    .pdf-section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .pdf-section details {
+      background: #fff;
+      border: 2px solid var(--accent-color);
+      border-radius: 8px;
+      padding: 1rem;
+      margin-top: 1rem;
+      box-shadow: 0 4px 12px var(--card-shadow);
+    }
+
+    .pdf-section summary {
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1.1rem;
+      color: var(--primary-color);
+      outline: none;
+    }
+
+    .pdf-frame {
+      width: 100%;
+      height: 800px;
+      border: none;
+      margin-top: 1rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      header img {
+        width: 120px;
+        height: 120px;
+      }
+
+      .pdf-frame {
+        height: 500px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <button class="mode-switch" onclick="toggleMode()">🌗 Modo Claro/Oscuro</button>
+
+  <header>
+    <img src="FOTO.png" alt="Foto de Ronaldo" />
+    <h1>Ronaldo Jesús Ávila Rodríguez</h1>
+    <p>Programador de aplicaciones y servicios para la nube | Comunicador digital y fotógrafo</p>
+  </header>
+
+  <section>
+    <h2>Resultados de Aprendizaje</h2>
+    <ul>
+      <li>Administración de bases de datos según estándares técnicos</li>
+      <li>Aplicación de prácticas ambientales, de seguridad y salud en el trabajo</li>
+      <li>Configuración de equipos de cómputo según diseño técnico</li>
+      <li>Construcción de sitios web con interoperabilidad y protocolos modernos</li>
+      <li>Desarrollo de soluciones de software según diseño y metodologías</li>
+      <li>Procesos de comunicación eficaces en contextos sociales y laborales</li>
+      <li>Diseño técnico de soluciones de software</li>
+      <li>Ejercicio de derechos laborales y normas constitucionales</li>
+      <li>Interacción ética en contextos productivos y sociales</li>
+      <li>Establecimiento de requisitos técnicos de software</li>
+      <li>Promoción de hábitos saludables en contextos laborales</li>
+      <li>Gestión de cultura emprendedora y empresarial</li>
+      <li>Comunicación oral y escrita en inglés laboral</li>
+      <li>Uso de herramientas informáticas y digitales según manual técnico</li>
+      <li>Razonamiento matemático aplicado a contextos reales</li>
+      <li>Participación activa en inducción institucional</li>
+    </ul>
+
+    <h2>Cursos y Certificados Detallados</h2>
+    <ul>
+      <li><strong>Diplomado:</strong> Procesos Comunicacionales Alternativos y Comunitarios – Universidad de Antioquia (2024)</li>
+      <li><strong>Certificación:</strong> Fundamentos de Ciberseguridad – Google (2023)</li>
+      <li><strong>Curso:</strong> Ciberseguridad – Universidad Francisco José de Caldas y MinTIC</li>
+      <li><strong>Certificación:</strong> Desarrollo de Habilidades Digitales para la Gestión de la Información – SENA (2023)</li>
+      <li><strong>Certificación:</strong> Emprendimiento Empresarial – SENA (2018)</li>
+      <li><strong>Certificación:</strong> Atención y Servicio al Cliente – SENA (2018)</li>
+      <li><strong>Certificado Internacional:</strong> IBM Coursera – <a href="https://coursera.org/verify/ANJ8CMSS2YJ5" target="_blank">Developing Interpersonal Skills</a></li>
+      <li><strong>Certificación:</strong> Bioseguridad para el retorno a la formación – SENA (2021)</li>
+      <li><strong>Certificación:</strong> Formulación de políticas públicas y proyectos de inversión – ESAP (2025)</li>
+      <li><strong>Curso:</strong> Implementación de Infraestructura de Tecnologías de la Información – SENA (1 año cursado)</li>
+      <li><strong>Curso:</strong> Redes y Seguridad – SENA (2023)</li>
+      <li><strong>Certificación:</strong> Curso de inducción institucional – SENA (2024)</li>
+    </ul>
+
+    <h2>Certificado de Prácticas</h2>
+    <p><strong>Entidad:</strong> Cámara de Comercio de Magangué</p>
+    <p><strong>Actividad:</strong> Etapa práctica del programa Técnico en Programación de Aplicaciones y Servicios para la Nube</p>
+    <p><strong>Duración:</strong> Desde el 08 de Abril de 2024 hasta el 09 de Octubre de 2024</p>
+    <p><strong>Resultado:</strong> Cumplimiento del plan de formación con aplicación práctica de conocimientos en digitalización, soporte técnico, documentación, sistemas, programación y comunicación</p>
+  </section>
+
+  <!-- Sección desplegable con PDF -->
+  <section class="pdf-section">
+    <h2>Certificados Oficiales</h2>
+    <details>
+      <summary>📄 Ver Certificado Oficial en PDF</summary>
+      <iframe class="pdf-frame" src="CERTIFICADO.pdf#toolbar=0&navpanes=0&scrollbar=1"></iframe>
+    </details>
+  </section>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
+
