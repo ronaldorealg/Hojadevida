@@ -30,6 +30,25 @@
       transition: all 0.3s ease;
     }
 
+    body.dark-mode {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    body.dark-mode header {
+      background: linear-gradient(135deg, #222, #444);
+      color: #ddd;
+    }
+
+    body.dark-mode a {
+      color: #80caff;
+    }
+
+    body.dark-mode .mode-switch {
+      background: #444;
+      color: #eee;
+    }
+
     header {
       background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
       color: var(--text-light);
@@ -115,6 +134,7 @@
       font-size: 0.9rem;
       cursor: pointer;
       z-index: 999;
+      transition: background 0.3s ease, color 0.3s ease;
     }
 
     /* PDF sección desplegable */
@@ -180,7 +200,7 @@
   </header>
 
   <section>
-    <h2>Resultados de Aprendizaje</h2>
+    <h2>Perfil profesional</h2>
     <ul>
       <li>Administración de bases de datos según estándares técnicos</li>
       <li>Aplicación de prácticas ambientales, de seguridad y salud en el trabajo</li>
@@ -223,7 +243,6 @@
     <p><strong>Resultado:</strong> Cumplimiento del plan de formación con aplicación práctica de conocimientos en digitalización, soporte técnico, documentación, sistemas, programación y comunicación</p>
   </section>
 
-  <!-- Sección desplegable con PDF -->
   <section class="pdf-section">
     <h2>Certificados Oficiales</h2>
     <details>
@@ -239,4 +258,3 @@
   </script>
 </body>
 </html>
-
